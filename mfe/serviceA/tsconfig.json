@@ -1,0 +1,20 @@
+{
+	"extends": "../../tsconfig.json",
+	"compileOnSave": false,
+	"compilerOptions": {
+		"target": "ES2017",
+		"baseUrl": "src",
+		"declaration": true, // Generate d.ts files
+		"jsx": "react",
+		"outDir": "dist",
+		"typeRoots": ["./node_modules/@types"],
+		"downlevelIteration": true,
+		"types": ["node", "jest"],
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strict": true
+	},
+	"exclude": ["bootstrap.js", "dist", "**/*.spec.ts"],
+	"include": ["src", "src/custom.d.ts"]
+}
